@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greenglanz, Ökologische Reinigung für Zuhause &amp; Büro</title>
+<meta name="description" content="Greenglanz reinigt Privathaushalte, Büros und Gewerbeflächen gründlich und mit ökologischen Mitteln. Festes Team, transparente Preise, flexible Termine.">
+<meta name="theme-color" content="#1F5C43">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Greenglanz">
+<meta property="og:title" content="Greenglanz, Ökologische Reinigung für Zuhause & Büro">
+<meta property="og:description" content="Gründliche Reinigung mit biologisch abbaubaren Mitteln, für Privathaushalte, Büros und Gewerbeflächen.">
+<meta property="og:image" content="assets/img/og-cover.jpg">
+<!-- TODO: og:url auf die echte Domain setzen, sobald sie feststeht -->
+<meta property="og:url" content="https://www.greenglanz-beispiel.de/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://www.greenglanz-beispiel.de/">
+<link rel="stylesheet" href="styles.css">
+
+<!--
+  JSON-LD Strukturierte Daten (LocalBusiness)
+  WICHTIG: Alle [Platzhalter] unten mit den echten Firmendaten ersetzen,
+  bevor die Seite live geht. Siehe README.md, Abschnitt "Platzhalter ersetzen".
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Greenglanz",
+  "image": "https://www.greenglanz-beispiel.de/assets/img/og-cover.jpg",
+  "description": "Ökologische Reinigung für Privathaushalte, Büros und Gewerbeflächen.",
+  "telephone": "[Telefonnummer einfügen]",
+  "email": "[E-Mail-Adresse einfügen]",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[Straße und Hausnummer einfügen]",
+    "postalCode": "[PLZ einfügen]",
+    "addressLocality": "[Stadt einfügen]",
+    "addressCountry": "DE"
+  },
+  "areaServed": "[Region/Stadt einfügen]",
+  "openingHours": "Mo-Fr 08:00-18:00"
+}
+</script>
+</head>
+<body>
+
+<!-- Icon-Sprite: ein konsistentes, selbst gehostetes Icon-Set (keine externen Abhängigkeiten) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4C11 4 4 11 4 20c9 0 16-7 16-16Z"/><path d="M6 18C11 13 15 9 19 5"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 5-3.2 8.2-7 9-3.8-.8-7-4-7-9V6l7-3Z"/><path d="M8.5 12l2.3 2.3L15.5 9.5"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3.2 2"/></symbol>
+<symbol id="i-badge" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.3 12.2l2.4 2.4 5-5.2"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 4h3l1.4 4-2 1.4a11 11 0 0 0 5.7 5.7l1.4-2 4 1.4v3a2 2 0 0 1-2.2 2 17 17 0 0 1-14.3-14.3A2 2 0 0 1 6.5 4Z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M4 6.5l8 6.5 8-6.5"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s6.5-6.2 6.5-11A6.5 6.5 0 0 0 5.5 10c0 4.8 6.5 11 6.5 11Z"/><circle cx="12" cy="10" r="2.2"/></symbol>
+<symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9.5l6 6 6-6"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12"/><path d="M18 6L6 18"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 3v2.2M12 18.8V21M4.4 12H2M22 12h-2.4M6 6l1.5 1.5M16.5 16.5L18 18M18 6l-1.5 1.5M7.5 16.5L6 18"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15.5"/><path d="M13.5 6l6 6-6 6"/></symbol>
+<symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3Z"/><path d="M19 15.5l.7 2.3 2.3.7-2.3.7-.7 2.3-.7-2.3-2.3-.7 2.3-.7.7-2.3Z"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><rect x="2.5" y="7" width="11" height="8" rx="1"/><path d="M13.5 10h4l3 3v2h-7Z"/><circle cx="6.5" cy="17.5" r="1.6"/><circle cx="17" cy="17.5" r="1.6"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><rect x="4" y="13.5" width="16" height="4" rx="1"/><rect x="6" y="9" width="12" height="4" rx="1"/><rect x="8" y="4.5" width="8" height="4" rx="1"/></symbol>
+<symbol id="i-team" viewBox="0 0 24 24"><circle cx="9" cy="9" r="3"/><circle cx="16" cy="10.5" r="2.4"/><path d="M3.5 19c.6-3.4 3-5 5.5-5s4.9 1.6 5.5 5"/><path d="M14 19c.4-2.3 1.7-3.7 3.5-4.2"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24"><path d="M11 3.5H5.5A2 2 0 0 0 3.5 5.5V11l9 9 7.5-7.5-9-9Z"/><circle cx="8" cy="8" r="1.4"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3L5 13.5h5.5L11 21l8-10.5h-5.5L13 3Z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.3 3.6 5.3 3.6 8.5s-1.2 6.2-3.6 8.5c-2.4-2.3-3.6-5.3-3.6-8.5S9.6 5.8 12 3.5Z"/></symbol>
+<symbol id="i-camera" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.5"/><circle cx="12" cy="13.5" r="3.6"/><path d="M8.5 7l1.2-2h4.6l1.2 2"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5.5h16v10.5H9.5L5 20v-4H4Z"/></symbol>
+</defs>
+</svg>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<!-- Winziger Sensor, damit script.js per IntersectionObserver erkennt,
+     ob die Seite gescrollt wurde (statt eines scroll-Events, das bei
+     jedem Frame feuert). -->
+<div id="scroll-sentinel" style="position:absolute;top:0;height:1px;width:1px;"></div>
+
+<header class="site-header" id="top">
+  <div class="wrap header-row">
+    <a class="brand" href="#top" aria-label="Greenglanz, zur Startseite">
+      <svg class="icon brand-mark" aria-hidden="true"><use href="#i-leaf"/></svg>
+      <span>Greenglanz</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#warum">Warum wir</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Dunkles Design umschalten" aria-pressed="false">
+        <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      </button>
+      <a class="btn btn-primary btn-nav-cta" href="#kontakt">Angebot anfordern</a>
+      <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Bewusst AUSSERHALB von <header>: .site-header nutzt backdrop-filter,
+     was einen eigenen Containing Block für position:fixed-Kindelemente
+     erzeugt und dieses Panel sonst auf die Kopfzeilenhöhe zusammenstauchen
+     würde, statt es über die volle Bildschirmhöhe zu legen. -->
+<div class="mobile-nav" id="mobile-nav">
+  <nav aria-label="Mobile Navigation">
+    <a href="#leistungen">Leistungen</a>
+    <a href="#ablauf">Ablauf</a>
+    <a href="#warum">Warum wir</a>
+    <a href="#bewertungen">Bewertungen</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="btn btn-primary" href="#kontakt">Angebot anfordern</a>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-leaf"/></svg>Ökologische Reinigung</p>
+        <h1>Saubere Räume.<br>Reines Gewissen.</h1>
+        <p class="lead">Professionelle Reinigung für Zuhause und Büro, mit biologisch abbaubaren Mitteln und einem Team, das mitdenkt.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#kontakt">Angebot anfordern</a>
+          <a class="btn btn-ghost btn-lg" href="#leistungen">Leistungen ansehen</a>
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <img
+          src="https://images.unsplash.com/photo-1758273238415-01ec03d9ef27?q=80&w=1200&auto=format&fit=crop"
+          alt="Reinigungskraft wischt den Boden in einem hellen, modernen Wohnzimmer"
+          width="1200" height="1500" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust-strip reveal" aria-label="Gut zu wissen">
+    <div class="wrap trust-row">
+      <div class="trust-item">
+        <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+        <span>Versichert &amp; zuverlässig</span>
+      </div>
+      <div class="trust-item">
+        <svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg>
+        <span>Ökologische Mittel</span>
+      </div>
+      <div class="trust-item">
+        <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+        <span>Flexible Termine</span>
+      </div>
+      <div class="trust-item">
+        <svg class="icon" aria-hidden="true"><use href="#i-badge"/></svg>
+        <span>Zufriedenheitsgarantie</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEISTUNGEN (Bento) ============ -->
+  <section class="section" id="leistungen">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Unsere Leistungen</h2>
+        <p>Von der wöchentlichen Wohnungsreinigung bis zur Endreinigung nach dem Umzug. Sagen Sie uns, was gereinigt werden soll.</p>
+      </div>
+
+      <div class="bento reveal">
+        <article class="tile tile-lg" style="--tile-img:url('https://images.unsplash.com/photo-1646980241033-cd7abda2ee88?q=80&w=1000&auto=format&fit=crop')">
+          <div class="tile-body">
+            <h3>Haushaltsreinigung</h3>
+            <p>Regelmäßige oder einmalige Reinigung für Ihr Zuhause, gründlich und zuverlässig.</p>
+          </div>
+        </article>
+
+        <article class="tile tile-lg" style="--tile-img:url('https://images.unsplash.com/photo-1580256081112-e49377338b7f?q=80&w=1000&auto=format&fit=crop')">
+          <div class="tile-body">
+            <h3>Büro- &amp; Gewerbereinigung</h3>
+            <p>Saubere Arbeitsplätze für Teams, Praxen und Ladenlokale, nach Ihrem Zeitplan.</p>
+          </div>
+        </article>
+
+        <article class="tile tile-sm" style="--tile-img:url('https://images.unsplash.com/photo-1482449609509-eae2a7ea42b7?q=80&w=800&auto=format&fit=crop')">
+          <div class="tile-body">
+            <h3>Fensterreinigung</h3>
+            <p>Streifenfreier Durchblick, innen wie außen.</p>
+          </div>
+        </article>
+
+        <article class="tile tile-sm tile-tint">
+          <div class="tile-body">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-sparkle"/></svg>
+            <h3>Grundreinigung</h3>
+            <p>Für den großen Frühjahrsputz oder nach Renovierungen.</p>
+          </div>
+        </article>
+
+        <article class="tile tile-sm tile-tint">
+          <div class="tile-body">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-truck"/></svg>
+            <h3>Umzugsreinigung</h3>
+            <p>Besenrein übergeben oder übernehmen, wir kümmern uns darum.</p>
+          </div>
+        </article>
+
+        <article class="tile tile-sm" style="--tile-img:url('https://images.unsplash.com/photo-1742483359033-13315b247c74?q=80&w=800&auto=format&fit=crop')">
+          <div class="tile-body">
+            <h3>Teppich- &amp; Polsterreinigung</h3>
+            <p>Tiefenreinigung für Teppiche, Sofas und Matratzen.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABLAUF (Process) ============ -->
+  <section class="section section-alt" id="ablauf">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>So einfach geht's</h2>
+        <p>Vier Schritte zwischen Ihrer Anfrage und einem sauberen Ergebnis.</p>
+      </div>
+
+      <ol class="process reveal">
+        <li class="process-step">
+          <span class="step-index">01</span>
+          <h3>Anfragen</h3>
+          <p>Kurze Nachricht oder Anruf. Wir melden uns innerhalb eines Werktages.</p>
+        </li>
+        <li class="process-step">
+          <span class="step-index">02</span>
+          <h3>Angebot</h3>
+          <p>Sie erhalten ein klares Angebot, bei größeren Objekten nach kurzer Besichtigung.</p>
+        </li>
+        <li class="process-step">
+          <span class="step-index">03</span>
+          <h3>Reinigen</h3>
+          <p>Unser Team kommt pünktlich, bringt eigene Ausrüstung mit und arbeitet gründlich.</p>
+        </li>
+        <li class="process-step">
+          <span class="step-index">04</span>
+          <h3>Nachprüfen</h3>
+          <p>Sie kontrollieren das Ergebnis. Passt etwas nicht, bessern wir kostenlos nach.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ WARUM GREENGLANZ (full-width band) ============ -->
+  <section class="section band" id="warum">
+    <div class="wrap">
+      <div class="section-head band-head">
+        <h2>Warum Greenglanz</h2>
+      </div>
+
+      <div class="feature-grid reveal">
+        <div class="feature">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-leaf"/></svg>
+          <h3>Ökologisch ohne Abstriche</h3>
+          <p>Biologisch abbaubare Mittel, die genauso gründlich reinigen wie herkömmliche.</p>
+        </div>
+        <div class="feature">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-team"/></svg>
+          <h3>Festes Team, keine Aushilfen</h3>
+          <p>Sie sehen immer vertraute Gesichter, keine wechselnden Fremden.</p>
+        </div>
+        <div class="feature">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-tag"/></svg>
+          <h3>Transparente Preise</h3>
+          <p>Ein Angebot, keine versteckten Zuschläge hinterher.</p>
+        </div>
+        <div class="feature">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-bolt"/></svg>
+          <h3>Kurzfristig verfügbar</h3>
+          <p>Auch spontane Termine sind oft innerhalb weniger Tage möglich.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BEWERTUNGEN (Testimonial carousel) ============ -->
+  <!-- Platzhalter-Stimmen: bitte vor Veröffentlichung durch echte Kundenbewertungen ersetzen. -->
+  <section class="section" id="bewertungen">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Was Kundinnen und Kunden sagen</h2>
+      </div>
+
+      <div class="quote-track reveal">
+        <figure class="quote-card">
+          <blockquote>„Endlich eine Reinigungsfirma, die pünktlich ist und wirklich gründlich arbeitet.“</blockquote>
+          <figcaption>
+            <span class="avatar">MS</span>
+            <span><strong>Mareike S.</strong><br>Privatkundin</span>
+          </figcaption>
+        </figure>
+        <figure class="quote-card">
+          <blockquote>„Unser Büro wird zweimal wöchentlich gereinigt. Immer zuverlässig, immer gleich gute Qualität.“</blockquote>
+          <figcaption>
+            <span class="avatar">TB</span>
+            <span><strong>Thomas B.</strong><br>Büroleitung</span>
+          </figcaption>
+        </figure>
+        <figure class="quote-card">
+          <blockquote>„Die Endreinigung nach dem Auszug hat uns die Kaution gerettet. Sehr empfehlenswert.“</blockquote>
+          <figcaption>
+            <span class="avatar">FK</span>
+            <span><strong>Fatima K.</strong><br>Privatkundin</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ (Accordion) ============ -->
+  <section class="section section-alt" id="faq">
+    <div class="wrap wrap-narrow">
+      <div class="section-head">
+        <h2>Häufige Fragen</h2>
+      </div>
+
+      <div class="accordion reveal">
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            <span>Wie schnell bekomme ich ein Angebot?</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="acc-panel"><p>In der Regel antworten wir innerhalb eines Werktages, oft schneller.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            <span>Welche Reinigungsmittel verwendet ihr?</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="acc-panel"><p>Ausschließlich biologisch abbaubare, umweltverträgliche Produkte, sofern nicht anders gewünscht.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            <span>Muss ich während der Reinigung zuhause sein?</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="acc-panel"><p>Nein. Viele Kundinnen und Kunden übergeben uns einen Schlüssel oder Zugangscode.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            <span>Bietet ihr auch einmalige Reinigungen an?</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="acc-panel"><p>Ja, neben regelmäßigen Terminen sind Einzelaufträge jederzeit möglich.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            <span>Wie kurzfristig kann ich einen Termin buchen?</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="acc-panel"><p>Je nach Auslastung oft innerhalb weniger Tage. Fragen Sie einfach an.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            <span>Was passiert, wenn ich nicht zufrieden bin?</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="acc-panel"><p>Wir bessern kostenlos nach. Ihre Zufriedenheit ist Teil unseres Angebots.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="section cta-band">
+    <div class="wrap cta-inner reveal">
+      <h2>Bereit für mehr Glanz?</h2>
+      <p>Schreiben Sie uns kurz, was gereinigt werden soll. Sie erhalten zeitnah ein passendes Angebot.</p>
+      <a class="btn btn-primary btn-lg" href="#kontakt">Angebot anfordern</a>
+    </div>
+  </section>
+
+  <!-- ============ KONTAKT ============ -->
+  <section class="section" id="kontakt">
+    <div class="wrap contact-grid">
+      <div class="contact-info reveal">
+        <h2>Kontakt</h2>
+        <p>Am schnellsten geht es über das Formular. Sie können uns aber auch direkt anrufen oder schreiben.</p>
+
+        <ul class="contact-list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+49000000000">[Telefonnummer einfügen]</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:info@greenglanz-beispiel.de">[E-Mail-Adresse einfügen]</a></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>[Straße, PLZ Stadt einfügen]</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>Mo-Fr, 08:00-18:00 Uhr</span></li>
+        </ul>
+
+        <div class="social-row">
+          <a class="icon-btn" href="#" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg></a>
+          <a class="icon-btn" href="#" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></a>
+          <a class="icon-btn" href="#" aria-label="WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/DEIN-FORMSPREE-ID" method="POST" novalidate>
+        <!-- Formspree: kostenloses Konto auf formspree.io anlegen und DEIN-FORMSPREE-ID ersetzen. Siehe README.md -->
+        <div class="form-row">
+          <label for="f-name">Name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+          <span class="field-error" data-for="f-name">Bitte geben Sie Ihren Namen ein.</span>
+        </div>
+        <div class="form-row">
+          <label for="f-email">E-Mail</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+          <span class="field-error" data-for="f-email">Bitte geben Sie eine gültige E-Mail-Adresse ein.</span>
+        </div>
+        <div class="form-row">
+          <label for="f-phone">Telefon <span class="optional">(optional)</span></label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="form-row">
+          <label for="f-service">Leistung</label>
+          <select id="f-service" name="service">
+            <option value="Haushaltsreinigung">Haushaltsreinigung</option>
+            <option value="Büro- & Gewerbereinigung">Büro- &amp; Gewerbereinigung</option>
+            <option value="Fensterreinigung">Fensterreinigung</option>
+            <option value="Grundreinigung">Grundreinigung</option>
+            <option value="Umzugsreinigung">Umzugsreinigung</option>
+            <option value="Teppich- & Polsterreinigung">Teppich- &amp; Polsterreinigung</option>
+            <option value="Sonstiges">Sonstiges</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="f-message">Nachricht</label>
+          <textarea id="f-message" name="message" rows="4" required></textarea>
+          <span class="field-error" data-for="f-message">Bitte kurz beschreiben, was gereinigt werden soll.</span>
+        </div>
+        <button class="btn btn-primary btn-lg btn-submit" type="submit">
+          <span class="btn-label">Angebot anfordern</span>
+        </button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="#top">
+        <svg class="icon brand-mark" aria-hidden="true"><use href="#i-leaf"/></svg>
+        <span>Greenglanz</span>
+      </a>
+      <p>Ökologische Reinigung für Zuhause und Büro.</p>
+      <div class="social-row">
+        <a class="icon-btn" href="#" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg></a>
+        <a class="icon-btn" href="#" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></a>
+        <a class="icon-btn" href="#" aria-label="WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></a>
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Navigation">
+      <h4>Navigation</h4>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#warum">Warum wir</a>
+      <a href="#bewertungen">Bewertungen</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="footer-contact">
+      <h4>Kontakt</h4>
+      <p>[Straße, PLZ Stadt einfügen]</p>
+      <p><a href="tel:+49000000000">[Telefonnummer einfügen]</a></p>
+      <p><a href="mailto:info@greenglanz-beispiel.de">[E-Mail-Adresse einfügen]</a></p>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>© <span id="year">2026</span> Greenglanz. Alle Rechte vorbehalten.</p>
+    <div class="footer-legal">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
